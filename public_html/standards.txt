@@ -1,0 +1,99 @@
+MadSwag House Style
+by John Shutt
+Last Updated 5/17/2011 by John Shutt
+
+Table of Contents
+Section 0: How to Read This Document
+Section 1: General Rules
+Section 2: CSS
+Section 3: HTML
+Section 4: JavaScript
+Section 5: PHP
+
+
+SECTION 0: HOW TO READ THIS DOCUMENT
+
+Specific rules are indicated by a + symbol. Any sample code included in this document, unless otherwise indicated, is an example of well-formatted code. Sections are numbered, and have headers indicated by all caps.
+
+
+SECTION 1: GENERAL RULES
+
++ Indent by two spaces.
++ Keep logic, content, behavior, and presentation separate.
++ Document everything.
+
+
+SECTION 2: CSS
+
++ The opening bracket comes one space after the selector.
++ Each property is placed on a new line and indented.
++ The closing bracket is placed on a new line after the last property, and is not indented.
++ em is the unit of measure used throughout.
++ Avoid using px, and never use percentages.
+
+Here are a few pieces of sample CSS following the house style.
+
+body {
+  background-color: #FFFFFF;
+  font-family: Arial, 'Nimbus Sans L', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu li:hover {
+  background-color: #33BBBB;
+}
+
+.oneCol {
+  margin-top: 1em;
+  clear: both;
+  float: left;
+  width: 49.2em;
+}
+
+
+SECTION 3: HTML
+
++ We use XHTML Transitional.
++ Use single quotes.
++ Things that remain largely static (such as log-in forms and pieces of written content) should be written as separate HTML files that will be included within a PHP-generated page.
++ When writing static HTML files that are going to be to be used within a larger page, indent four or five times, so that they fit nicely with the generated code. (In the generated code, the first indent is for <body>, the second indent is for <div id = 'all'>, the third indent is for <div id = 'pageContent'>, and the optional fourth indent provides further formatting instructions, such as <div class = 'right'> or <div class = 'left'>)
+
+A sample of a static HTML file written in the house style.
+
+        <form action = 'processlogin.php'
+              method = 'post' >
+          <fieldset>
+            <h2 class = 'center'>Log In</h2>
+            <label>Username or Email</label>
+            <input type = 'text'
+                   id = 'txtLogin'
+                   name = 'txtLogin'
+                   maxlength = '50'/>
+            <label>Password</label>
+            <input type = 'password'
+                   id = 'txtPassword'
+                   name = 'txtPassword'
+                   maxlength = '25'/>
+            <button type = 'submit'>
+              Log In
+            </button>
+            <h4 class = 'center'>Not registered yet? <a href = 'join.php'>Create an account</a></h4>
+            <h4 class = 'center'>Forgot your password? <a href = 'forgotpassword.php'>Reset it</a></h4>
+          </fieldset>
+        </form>
+
+
+SECTION 4: JAVASCRIPT
+
++ jQuery is our primary JavaScript library.
+
+
+SECTION 5: PHP
+
++ If code can be reused, make it a function.
++ Reduce functions to the smallest reusable components and make each component its own function.
++ Give functions meaningful names, like generate_game_over(), find_grade(), and test_password()
++ When you create a function, add the function name and parameters to the master list in madswag_fns.php, and place the actual code of the function in the appropriate sublist, such as mail_fns.php or output_fns.php
++ 
+

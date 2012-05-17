@@ -1,0 +1,3 @@
+# Insert the winner and the spread for each of the five games.
+INSERT INTO `mpbase20110331_actual` (`gameID`, `winner`, `spread`)
+VALUES (1, 'NY Yankees', 3),(2, 'Atlanta', 2),(3, 'Cincinnati', 1),(4, 'LA Angels', 2),(5, 'San Diego', 2),(6, 'LA Dodgers', 1),(7, 'Philadelphia', 1),(8, 'Pittsburgh', 3),(9, 'Chicago White Sox', 5),(10, 'Texas', 4),(11, 'Arizona', 1),(12, 'Toronto', 10),(13, 'Florida', 6),(14, 'Baltimore', 3),(15, 'Seattle', 4);
